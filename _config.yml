@@ -1,0 +1,31 @@
+title: Xaml Design Studio
+description: UI/UX 디자인과 개발을 위한 Xaml Design Studio
+url: https://www.xamldesign.studio
+baseurl: ""
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Header navigation menu
+header_pages:
+  - about.md
+  - projects.md
+  - docs.md
+  - blog.md
+  - showcases.md
+  - community.md
+  - downloads.md
+  - contact.md
+
+# Site settings
+lang: ko-KR
+author:
+  name: Xaml Design Studio Team
+  email: [내용 입력: 이메일 주소]
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/

@@ -1,0 +1,21 @@
+# Jekyll site generation
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor specific files
+*.swp
+*~
+.vscode/
+.idea/
+
+# Node modules if using any JavaScript tools
+node_modules/

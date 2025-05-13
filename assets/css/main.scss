@@ -1,0 +1,101 @@
+---
+---
+
+/* Custom styles for Xaml Design Studio website */
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-item {
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.project-item {
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0078d7;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005a9e;
+  text-decoration: none;
+  color: white;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.featured-section, .projects-section, .blog-preview {
+  margin: 3rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+/* Header styles */
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 55.95px;
+  position: relative;
+  background-color: #f8f9fa;
+}
+
+/* Footer styles */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+  background-color: #f8f9fa;
+}
