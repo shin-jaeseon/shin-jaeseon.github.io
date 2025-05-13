@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <div class="blog">
-  <h1 class="page-heading">블로그</h1>
+  <h1 class="page-heading">Blog</h1>
 
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
@@ -20,9 +20,13 @@ permalink: /blog/
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
+        <div class="post-tags">
+          {%- for tag in post.tags -%}
+            <a class="tag" href="/tags/{{ tag | slugify }}">{{ tag }}</a>
+          {%- endfor -%}
+        </div>
       </li>
       {%- endfor -%}
     </ul>
-
   {%- endif -%}
 </div>

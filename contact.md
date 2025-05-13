@@ -4,21 +4,21 @@ title: Contact
 permalink: /contact/
 ---
 
-# 연락처
+# Contact
 
-Xaml Design Studio 팀에게 연락하고 싶으시다면 아래 방법을 이용해 주세요.
+If you would like to contact the Xaml Design Studio team, please use the methods below.
 
-## 이메일
+## Email
 
-[내용 입력: 이메일 주소]
+[Enter content: Email address]
 
-## 소셜 미디어
+## Social Media
 
-- GitHub: [내용 입력: GitHub 프로필 링크]
-- Twitter: [내용 입력: Twitter 계정]
-- LinkedIn: [내용 입력: LinkedIn 프로필]
+- GitHub: [Enter content: GitHub profile link]
+- Twitter: [Enter content: Twitter account]
+- LinkedIn: [Enter content: LinkedIn profile]
 
-## 문의 양식
+## Contact Form
 
 <form action="[내용 입력: 폼 처리 URL]" method="POST">
   <div class="form-group">

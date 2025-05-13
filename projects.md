@@ -4,26 +4,36 @@ title: Projects
 permalink: /projects/
 ---
 
-# 프로젝트 목록
+# Project List
 
 ## XamlDS.ITK
 
-[내용 입력: XamlDS.ITK 프로젝트에 대한 개요]
+[Enter content: Overview of the XamlDS.ITK project]
 
-### 주요 기능
+### Key Features
 
-- [내용 입력: 주요 기능 1]
-- [내용 입력: 주요 기능 2]
-- [내용 입력: 주요 기능 3]
+- [Enter content: Key feature 1]
+- [Enter content: Key feature 2]
+- [Enter content: Key feature 3]
 
-### 지원 프레임워크
+### Supported Frameworks
 
-- **WPF**: [내용 입력: WPF 관련 설명]
-- **WinUI3**: [내용 입력: WinUI3 관련 설명]
-- **AvaloniaUI**: [내용 입력: AvaloniaUI 관련 설명]
+- **WPF**: [Enter content: WPF-related description]
+- **WinUI3**: [Enter content: WinUI3-related description]
+- **AvaloniaUI**: [Enter content: AvaloniaUI-related description]
 
 [GitHub 저장소 바로가기](https://github.com/shin-jaeseon/XamlDS.ITK)
 
-## 다른 프로젝트
+## XamlDS.Toolkit
 
-[내용 입력: 추가 프로젝트에 대한 설명]
+[Enter content: Overview of the XamlDS.Toolkit project]
+
+### Features
+
+- [Enter content: Feature 1]
+- [Enter content: Feature 2]
+- [Enter content: Feature 3]
+
+## XamlDS.Patterns
+
+[Enter content: Overview of the XamlDS.Patterns project]

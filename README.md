@@ -1,61 +1,61 @@
 # Xaml Design Studio Website
 
-이 저장소는 [Xaml Design Studio](https://www.xamldesign.studio) 웹사이트를 위한 것으로, GitHub Pages를 사용하여 호스팅됩니다.
+This repository is for the [Xaml Design Studio](https://www.xamldesign.studio) website, hosted using GitHub Pages.
 
-## 로컬에서 사이트 실행하기
+## Running the Site Locally
 
-이 사이트는 Jekyll을 사용하여 구축되었습니다. 로컬에서 실행하려면 다음 단계를 따르세요:
+This site is built with Jekyll. To run it locally, follow these steps:
 
-1. Ruby 설치 (https://www.ruby-lang.org/en/downloads/)
-2. Jekyll 및 Bundler 설치:
+1. Install Ruby (https://www.ruby-lang.org/en/downloads/)
+2. Install Jekyll and Bundler:
    ```
    gem install jekyll bundler
    ```
-3. 저장소를 클론하고 해당 디렉토리로 이동:
+3. Clone the repository and navigate to its directory:
    ```
    git clone https://github.com/shin-jaeseon/shin-jaeseon.github.io.git
    cd shin-jaeseon.github.io
    ```
-4. 의존성 설치:
+4. Install dependencies:
    ```
    bundle install
    ```
-5. 로컬 서버 실행:
+5. Run local server:
    ```
    bundle exec jekyll serve
    ```
-6. 브라우저에서 `http://localhost:4000` 접속
+6. Access in browser at `http://localhost:4000`
 
-## 사이트 구조
+## Site Structure
 
-- `_posts/`: 블로그 포스트
-- `_projects/`: 프로젝트 정보
-- `assets/`: 이미지, CSS 등의 정적 파일
-- `_layouts/`: 레이아웃 템플릿
-- `_includes/`: 재사용 가능한 HTML 컴포넌트
+- `_posts/`: Blog posts
+- `_projects/`: Project information
+- `assets/`: Static files such as images, CSS
+- `_layouts/`: Layout templates
+- `_includes/`: Reusable HTML components
 
-## 콘텐츠 추가하기
+## Adding Content
 
-### 블로그 포스트 추가
+### Adding Blog Posts
 
-`_posts` 디렉토리에 `YYYY-MM-DD-title.md` 형식의 마크다운 파일을 생성하고 다음과 같은 YAML 프론트매터를 추가하세요:
+Create a markdown file in the `_posts` directory with the format `YYYY-MM-DD-title.md` and add the following YAML front matter:
 
 ```yaml
 ---
 layout: post
-title: "포스트 제목"
+title: "Post Title"
 date: YYYY-MM-DD
 categories: category_name
 tags: tag1 tag2
 ---
 ```
 
-그 다음 마크다운으로 콘텐츠를 작성하세요.
+Then write your content in markdown.
 
-### 프로젝트 추가
+### Adding Projects
 
-`projects` 디렉토리에 새 마크다운 파일을 생성하세요.
+Create a new markdown file in the `projects` directory.
 
-## 라이센스
+## License
 
-[내용 입력: 라이센스 정보]
+[Enter content: License information]

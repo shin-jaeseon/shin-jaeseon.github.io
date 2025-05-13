@@ -6,48 +6,66 @@ permalink: /projects/xamlds-itk/
 
 # XamlDS.ITK
 
-[내용 입력: XamlDS.ITK 프로젝트에 대한 자세한 설명]
+[Enter content: Detailed description of the XamlDS.ITK project]
 
-## 개요
+## Overview
 
-XamlDS.ITK(Interface Toolkit)는 크로스 플랫폼 XAML 기반 UI 개발을 위한 통합 라이브러리 모음입니다.
+XamlDS.ITK (Interface Toolkit) is a unified library collection for cross-platform XAML-based UI development.
 
-## 아키텍처
+## Architecture
 
-[내용 입력: 프로젝트의 아키텍처 구조에 대한 설명]
+[Enter content: Description of the project's architectural structure]
 
-### 핵심 구성요소
+### Core Components
 
-- **XamlDS.ITK.Core**: [내용 입력: 코어 라이브러리 설명]
-- **XamlDS.ITK.WPF**: [내용 입력: WPF 구현체 설명]
-- **XamlDS.ITK.WinUI3**: [내용 입력: WinUI3 구현체 설명]
-- **XamlDS.ITK.AvaloniaUI**: [내용 입력: AvaloniaUI 구현체 설명]
+- **XamlDS.ITK.Core**: [Enter content: Description of core library]
+- **XamlDS.ITK.WPF**: Platform-specific implementation for WPF applications
+- **XamlDS.ITK.WinUI3**: Platform-specific implementation for WinUI3 applications
+- **XamlDS.ITK.AvaloniaUI**: Platform-specific implementation for AvaloniaUI applications
 
-## 설치 방법
+## Features
 
-### NuGet 패키지
+### Modern Controls
 
-```
-Install-Package XamlDS.ITK.Core
-Install-Package XamlDS.ITK.WPF
-Install-Package XamlDS.ITK.WinUI3
-Install-Package XamlDS.ITK.AvaloniaUI
-```
+XamlDS.ITK provides a comprehensive set of modern UI controls designed for contemporary application development:
 
-## 시작하기
+- Card layouts
+- Advanced input controls
+- Data visualization components
+- Navigation systems
+- And more...
 
-[내용 입력: 프로젝트를 시작하는 기본 방법 설명]
+### Theming System
 
-### 코드 예제
+The toolkit includes a powerful theming system that supports:
+
+- Light and dark modes
+- Custom color schemes
+- Consistent styling across platforms
+- Dynamic theme switching
+
+### Platform Abstraction
+
+One of the key benefits of XamlDS.ITK is its platform abstraction capabilities:
 
 ```csharp
-// [내용 입력: 코드 예제]
+// Platform-agnostic component initialization
+public void InitializeUI()
+{
+    var button = XDSControlFactory.Create<IXDSButton>();
+    button.Content = "Click Me";
+    button.Click += OnButtonClick;
+    
+    RootContainer.Children.Add(button);
+}
 ```
 
-## 라이센스
+## Getting Started
 
-[내용 입력: 라이센스 정보]
+To begin using XamlDS.ITK in your project:
 
-## 기여하기
+1. Install the required packages via NuGet
+2. Add the appropriate namespaces to your XAML
+3. Start using the components in your application
 
-[내용 입력: 프로젝트에 기여하는 방법]
+For detailed instructions, see the [Getting Started Guide](/docs/getting-started/).

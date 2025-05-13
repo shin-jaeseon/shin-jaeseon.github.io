@@ -4,27 +4,29 @@ title: Downloads
 permalink: /downloads/
 ---
 
-# 다운로드
+# Downloads
 
-Xaml Design Studio와 관련된 다양한 리소스를 다운로드할 수 있습니다.
+Download various resources related to Xaml Design Studio.
 
-## NuGet 패키지
+## NuGet Packages
 
-XamlDS.ITK 라이브러리 NuGet 패키지는 다음 링크에서 다운로드하거나 Package Manager를 통해 설치할 수 있습니다.
+XamlDS.ITK library NuGet packages can be downloaded from the following links or installed via Package Manager.
 
-- [XamlDS.ITK.Core](https://www.nuget.org/packages/XamlDS.ITK.Core) - 코어 라이브러리
-- [XamlDS.ITK.WPF](https://www.nuget.org/packages/XamlDS.ITK.WPF) - WPF 구현체
-- [XamlDS.ITK.WinUI3](https://www.nuget.org/packages/XamlDS.ITK.WinUI3) - WinUI 3 구현체
-- [XamlDS.ITK.AvaloniaUI](https://www.nuget.org/packages/XamlDS.ITK.AvaloniaUI) - AvaloniaUI 구현체
+- [XamlDS.ITK.Core](https://www.nuget.org/packages/XamlDS.ITK.Core) - Core Library
+- [XamlDS.ITK.WPF](https://www.nuget.org/packages/XamlDS.ITK.WPF) - WPF Implementation
+- [XamlDS.ITK.WinUI3](https://www.nuget.org/packages/XamlDS.ITK.WinUI3) - WinUI 3 Implementation
+- [XamlDS.ITK.AvaloniaUI](https://www.nuget.org/packages/XamlDS.ITK.AvaloniaUI) - AvaloniaUI Implementation
 
-## 데모 애플리케이션
+## Demo Applications
 
-[내용 입력: 데모 애플리케이션 다운로드 링크 및 설명]
+Demo applications showcasing Xaml Design Studio features can be downloaded from the links below:
 
-## 문서
+- [WPF Demo](https://github.com/xamldesignstudio/XamlDS.ITK.DemoApps/releases/latest/download/XamlDS.ITK.WPF.Demo.zip)
+- [WinUI3 Demo](https://github.com/xamldesignstudio/XamlDS.ITK.DemoApps/releases/latest/download/XamlDS.ITK.WinUI3.Demo.zip)
+- [AvaloniaUI Demo](https://github.com/xamldesignstudio/XamlDS.ITK.DemoApps/releases/latest/download/XamlDS.ITK.AvaloniaUI.Demo.zip)
 
-[내용 입력: 문서 및 가이드 다운로드 링크]
+## Design Resources
 
-## 디자인 리소스
-
-[내용 입력: UI 키트, 아이콘 세트 등의 디자인 리소스]
+- [LilyPad Theme Guidelines (PDF)](https://xamldesignstudio.com/assets/downloads/LilyPad_Theme_Guidelines.pdf)
+- [XAML Design Studio Icon Set (SVG)](https://xamldesignstudio.com/assets/downloads/XamlDS_IconSet_v1.0.zip)
+- [UI Component Specifications (PDF)](https://xamldesignstudio.com/assets/downloads/XamlDS_Component_Specs.pdf)

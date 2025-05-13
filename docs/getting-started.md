@@ -1,100 +1,124 @@
 ---
 layout: page
-title: 시작하기
+title: Getting Started
 permalink: /docs/getting-started/
 ---
 
-# XamlDS.ITK 시작하기
+# Getting Started with XamlDS.ITK
 
-이 가이드는 XamlDS.ITK를 사용하여 개발을 시작하는 방법을 설명합니다.
+This guide explains how to start development using XamlDS.ITK.
 
-## 필수 조건
+## Prerequisites
 
-- Visual Studio 2022 이상
-- .NET 6.0 이상
-- 선택한 XAML 프레임워크에 따라:
+- Visual Studio 2022 or later
+- .NET 6.0 or later
+- Depending on your chosen XAML framework:
   - WPF: Windows OS
-  - WinUI3: Windows 10 버전 1809 이상
-  - AvaloniaUI: 모든 지원 플랫폼 (Windows, macOS, Linux)
+  - WinUI3: Windows 10 version 1809 or later
+  - AvaloniaUI: All supported platforms (Windows, macOS, Linux)
 
-## 설치
+## Installation
 
-### NuGet 패키지 설치하기
+### Via NuGet Package Manager UI
 
-Visual Studio의 NuGet 패키지 관리자를 사용하거나 다음 명령어를 입력하세요:
+1. Right-click on your project in Solution Explorer
+2. Select "Manage NuGet Packages..."
+3. Search for "XamlDS.ITK"
+4. Install the following packages:
+   - XamlDS.ITK.Core (required)
+   - XamlDS.ITK.WPF (for WPF projects)
+   - XamlDS.ITK.WinUI3 (for WinUI3 projects)
+   - XamlDS.ITK.AvaloniaUI (for AvaloniaUI projects)
 
-```powershell
-# 코어 라이브러리 설치
+### Via Package Manager Console
+
+```
 Install-Package XamlDS.ITK.Core
-
-# 프레임워크별 라이브러리 설치
-# WPF의 경우:
+# Then, based on your platform:
 Install-Package XamlDS.ITK.WPF
-# WinUI3의 경우:
+# or
 Install-Package XamlDS.ITK.WinUI3
-# AvaloniaUI의 경우:
+# or
 Install-Package XamlDS.ITK.AvaloniaUI
 ```
 
-## 프로젝트 설정
+## Project Setup
 
-### WPF 프로젝트
+### WPF Project
 
-```xml
-<!-- App.xaml -->
-<Application x:Class="YourNamespace.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:itk="clr-namespace:XamlDS.ITK.WPF;assembly=XamlDS.ITK.WPF">
-    <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <!-- ITK 스타일 사전 추가 -->
-                <itk:ITKResourceDictionary />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Application.Resources>
-</Application>
-```
-
-### WinUI3 프로젝트
-
-[내용 입력: WinUI3 프로젝트 설정 방법]
-
-### AvaloniaUI 프로젝트
-
-[내용 입력: AvaloniaUI 프로젝트 설정 방법]
-
-## 첫 번째 ITK 컴포넌트 사용하기
-
-### 기본 컨트롤 추가
+Add the following to your App.xaml:
 
 ```xml
-<!-- MainWindow.xaml (WPF) -->
-<Window x:Class="YourNamespace.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:itk="clr-namespace:XamlDS.ITK.WPF.Controls;assembly=XamlDS.ITK.WPF">
-    <Grid>
-        <itk:ITKButton Content="ITK 버튼" 
-                       Margin="10" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center"
-                       Click="ITKButton_Click"/>
-    </Grid>
-</Window>
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="pack://application:,,,/XamlDS.ITK.WPF;component/Themes/XDSTheme.xaml" />
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Application.Resources>
 ```
 
-```csharp
-// MainWindow.xaml.cs
-private void ITKButton_Click(object sender, RoutedEventArgs e)
-{
-    MessageBox.Show("ITK 버튼이 클릭되었습니다!");
-}
+Add namespaces to your XAML files:
+
+```xml
+xmlns:xamlds="clr-namespace:XamlDS.ITK.Controls;assembly=XamlDS.ITK.WPF"
 ```
 
-## 다음 단계
+### WinUI3 Project
 
-- [컴포넌트 목록](/docs/components/) 살펴보기
-- [테마 시스템](/docs/themes/) 알아보기
-- [고급 사용법](/docs/advanced/) 학습하기
+Add the following to your App.xaml:
+
+```xml
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="ms-appx:///XamlDS.ITK.WinUI3/Themes/XDSTheme.xaml" />
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Application.Resources>
+```
+
+Add namespaces to your XAML files:
+
+```xml
+xmlns:xamlds="using:XamlDS.ITK.Controls"
+```
+
+### AvaloniaUI Project
+
+Add the following to your App.axaml:
+
+```xml
+<Application.Styles>
+    <StyleInclude Source="avares://XamlDS.ITK.AvaloniaUI/Themes/XDSTheme.axaml" />
+</Application.Styles>
+```
+
+Add namespaces to your XAML files:
+
+```xml
+xmlns:xamlds="clr-namespace:XamlDS.ITK.Controls;assembly=XamlDS.ITK.AvaloniaUI"
+```
+
+## Basic Usage
+
+Here's a simple example using XamlDS.ITK controls:
+
+```xml
+<xamlds:XDSPanel>
+    <xamlds:XDSCard Padding="16">
+        <xamlds:XDSStackPanel Spacing="8">
+            <xamlds:XDSTextBlock Text="Hello, XamlDS.ITK!" FontSize="20" />
+            <xamlds:XDSButton Content="Click Me" Click="OnButtonClick" />
+        </xamlds:XDSStackPanel>
+    </xamlds:XDSCard>
+</xamlds:XDSPanel>
+```
+
+## Next Steps
+
+Now that you have XamlDS.ITK set up in your project, explore the following resources:
+
+- [Components Documentation](/docs/components/) - Learn about available UI components
+- [Theme System](/docs/themes/) - Customize the look and feel of your application
+- [Sample Projects](https://github.com/xamldesignstudio/XamlDS.ITK.Samples) - See XamlDS.ITK in action

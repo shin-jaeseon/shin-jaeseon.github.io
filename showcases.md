@@ -1,94 +1,86 @@
 ---
 layout: page
-title: 쇼케이스
+title: Showcases
 permalink: /showcases/
 ---
 
-# XamlDS.ITK 쇼케이스
+# XamlDS.ITK Showcases
 
-XamlDS.ITK를 사용하여 개발된 애플리케이션과 프로젝트를 소개합니다.
+Introducing applications and projects developed using XamlDS.ITK.
 
-## 주요 프로젝트
+## Featured Projects
 
-### [프로젝트명 1]
+### [Project Name 1]
 
-[내용 입력: 프로젝트 설명]
+[Enter content: Project description]
 
-![프로젝트 스크린샷](/assets/images/showcases/project1.png)
+![Project Screenshot](/assets/images/showcases/project1.png)
 
-**주요 기능:**
-- [내용 입력: 주요 기능 1]
-- [내용 입력: 주요 기능 2]
-- [내용 입력: 주요 기능 3]
+**Key Features:**
+- [Enter content: Key feature 1]
+- [Enter content: Key feature 2]
+- [Enter content: Key feature 3]
 
-**사용된 XamlDS.ITK 컴포넌트:**
-- [내용 입력: 사용된 컴포넌트 1]
-- [내용 입력: 사용된 컴포넌트 2]
-- [내용 입력: 사용된 컴포넌트 3]
+**Technology Stack:**
+- Platform: WPF
+- .NET Version: .NET 6
+- XamlDS.ITK Version: 0.9.8
 
-[자세히 보기](#) | [GitHub](#)
-
----
-
-### [프로젝트명 2]
-
-[내용 입력: 프로젝트 설명]
-
-![프로젝트 스크린샷](/assets/images/showcases/project2.png)
-
-**주요 기능:**
-- [내용 입력: 주요 기능 1]
-- [내용 입력: 주요 기능 2]
-- [내용 입력: 주요 기능 3]
-
-**사용된 XamlDS.ITK 컴포넌트:**
-- [내용 입력: 사용된 컴포넌트 1]
-- [내용 입력: 사용된 컴포넌트 2]
-- [내용 입력: 사용된 컴포넌트 3]
-
-[자세히 보기](#) | [GitHub](#)
+[Visit Website](#) | [Source Code](#)
 
 ---
 
-## 커뮤니티 프로젝트
+### [Project Name 2]
 
-### [커뮤니티 프로젝트 1]
+[Enter content: Project description]
 
-[내용 입력: 프로젝트 설명]
+![Project Screenshot](/assets/images/showcases/project2.png)
 
-![프로젝트 스크린샷](/assets/images/showcases/community1.png)
+**Key Features:**
+- [Enter content: Key feature 1]
+- [Enter content: Key feature 2]
+- [Enter content: Key feature 3]
 
-**개발자:** [개발자 이름](#)
+**Technology Stack:**
+- Platform: WinUI3
+- .NET Version: .NET 7
+- XamlDS.ITK Version: 1.0.0
 
-[자세히 보기](#) | [GitHub](#)
+[Visit Website](#) | [Source Code](#)
+
+## Community Projects
+
+### [Community Project 1]
+
+[Enter content: Project description]
+
+![Project Screenshot](/assets/images/showcases/community1.png)
+
+**Developer:** [Developer Name](#)
+
+[Learn More](#)
 
 ---
 
-### [커뮤니티 프로젝트 2]
+### [Community Project 2]
 
-[내용 입력: 프로젝트 설명]
+[Enter content: Project description]
 
-![프로젝트 스크린샷](/assets/images/showcases/community2.png)
+![Project Screenshot](/assets/images/showcases/community2.png)
 
-**개발자:** [개발자 이름](#)
+**Developer:** [Developer Name](#)
 
-[자세히 보기](#) | [GitHub](#)
+[Learn More](#)
 
----
+## Submit Your Project
 
-## 쇼케이스에 프로젝트 추가하기
+Are you using XamlDS.ITK in your project? We'd love to feature it here!
 
-XamlDS.ITK를 사용하여 개발한 프로젝트가 있다면 쇼케이스에 추가해 보세요!
+To submit your project for the showcase, please send the following information to [showcase@xamldesignstudio.com](mailto:showcase@xamldesignstudio.com):
 
-### 제출 방법
-
-1. [GitHub 이슈](https://github.com/shin-jaeseon/XamlDS.ITK/issues/new?template=showcase_submission.md)를 생성하세요.
-2. 다음 정보를 포함해 주세요:
-   - 프로젝트 이름 및 설명
-   - 스크린샷 (1200x800px 권장)
-   - 주요 기능 목록
-   - 사용된 XamlDS.ITK 컴포넌트 목록
-   - 프로젝트 URL 또는 GitHub 저장소 링크
-3. 검토 후 승인되면 쇼케이스에 추가됩니다.
-
-**참고:** 오픈 소스 프로젝트는 우선적으로 검토됩니다.
+1. Project name and description
+2. Screenshots (at least 2)
+3. Key features
+4. Technology stack details
+5. Links to website and/or source code (if available)
+6. Your name and contact information
