@@ -1,0 +1,13 @@
+<!-- Generated favicon.svg for XamlDS -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#gradient)" />
+  <path d="M128 160L256 96L384 160L384 352L256 416L128 352Z" fill="none" stroke="white" stroke-width="24" />
+  <path d="M128 160L256 224L384 160" fill="none" stroke="white" stroke-width="24" />
+  <path d="M256 224L256 416" fill="none" stroke="white" stroke-width="24" />
+</svg>

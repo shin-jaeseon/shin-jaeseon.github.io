@@ -6,31 +6,32 @@
   <title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  <link rel="icon" href="{{ "/assets/favicon/favicon.svg" | relative_url }}" type="image/svg+xml">
+  <link rel="alternate icon" href="{{ "/assets/favicon/favicon.ico" | relative_url }}" type="image/x-icon">
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
 </head>
-<body>
-  <header class="site-header" role="banner">
+<body>  <header class="site-header" role="banner">
     <div class="wrapper">
       <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
       <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
+        <button type="button" class="nav-trigger" aria-controls="navigation-menu" aria-expanded="false">
           <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            <svg viewBox="0 0 24 24" width="24px" height="24px">
+              <path d="M3,6h18v2H3V6z M3,11h18v2H3V11z M3,16h18v2H3V16z"/>
             </svg>
           </span>
-        </label>
-        <div class="trigger">
-          {% for path in site.header_pages %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
+        </button>
+        {% for path in site.header_pages %}
+          {% assign my_page = site.pages | where: "path", path | first %}
+          {% if my_page.title %}
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% endif %}
+        {% endfor %}
+        <a class="page-link" href="/docs">문서</a>
+        <a class="page-link" href="/blog">블로그</a>
+        <a class="page-link" href="/contact">문의</a>
       </nav>
     </div>
   </header>
@@ -40,12 +41,12 @@
       {{ content }}
     </div>
   </main>
-
   <footer class="site-footer">
     <div class="wrapper">
       <div class="footer-col-wrapper">
         <div class="footer-col footer-col-1">
           <h2 class="footer-heading">{{ site.title | escape }}</h2>
+          <p>최신 XAML 플랫폼을 위한 디자인 시스템 및 개발 도구</p>
           <ul class="contact-list">
             <li>
               {% if site.author.email %}
@@ -56,20 +57,64 @@
         </div>
 
         <div class="footer-col footer-col-2">
+          <h2 class="footer-heading">링크</h2>
+          <ul class="social-media-list">
+            <li><a href="/docs/getting-started">시작하기</a></li>
+            <li><a href="/blog">블로그</a></li>
+            <li><a href="/docs">문서</a></li>
+            <li><a href="/community">커뮤니티</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-col-3">
+          <h2 class="footer-heading">소셜 미디어</h2>
           <ul class="social-media-list">
             {% if site.github_username %}
             <li>
               {% include icon-github.html username=site.github_username %}
             </li>
             {% endif %}
+            <li><a href="https://twitter.com/XamlDesignStudio">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/company/xamldesignstudio">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/c/XamlDesignStudio">YouTube</a></li>
           </ul>
         </div>
-
-        <div class="footer-col footer-col-3">
-          <p>{{ site.description | escape }}</p>
+        
+        <div class="footer-col footer-col-4">
+          <h2 class="footer-heading">법적 정보</h2>
+          <ul class="social-media-list">
+            <li><a href="/privacy">개인정보 보호정책</a></li>
+            <li><a href="/terms">이용약관</a></li>
+            <li><a href="/licenses">라이선스</a></li>
+          </ul>
+          <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</p>
         </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile navigation toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const navTrigger = document.querySelector('.nav-trigger');
+      const siteNav = document.querySelector('.site-nav');
+      
+      if (navTrigger) {
+        navTrigger.addEventListener('click', function() {
+          siteNav.classList.toggle('nav-open');
+          const expanded = siteNav.classList.contains('nav-open');
+          navTrigger.setAttribute('aria-expanded', expanded);
+        });
+      }
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!siteNav.contains(event.target) && !navTrigger.contains(event.target)) {
+          siteNav.classList.remove('nav-open');
+          navTrigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
